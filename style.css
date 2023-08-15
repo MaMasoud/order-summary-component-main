@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+}
+.box{
+    width: 450px;
+    height: 700px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 20px;
+}
+.box img{
+    width: 100%;
+}
+.countan{
+    padding: 48px;
+    text-align: center;
+}
+@media (max-width: 490px) {
+    .countan{
+        padding: 30px;
+    }
+    .box{
+        height: 600px;
+    }
+    
+}
+.countan h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.countan p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 16px;
+}
+.countan .box-music{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    padding: 25px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 30px 0;
+}
+@media (max-width: 490px){
+    .countan .box-music{
+        margin: 20px 0;
+        padding: 15px;
+    }
+}
+.countan .box-music .element-1{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.countan .box-music .element-1 .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    height: 48px;
+}
+.countan .box-music .element-1 .text h2{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 16px;
+}
+.countan .box-music .element-1 .text h3{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 16.5px;
+}
+.countan .box-music .element-2 a{
+    font-weight: 900;
+    font-size: 14px;
+    color: hsl(245, 75%, 52%);
+    transition: 0.3s;
+}
+.countan .box-music .element-2 a:hover{
+    cursor: pointer;
+    color: hsl(244.51deg 82.61% 68.43%);
+    text-decoration: none;
+}
+.countan button{
+    height: 50px;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    transition: 0.3s;
+    box-shadow: 0 15px 15px 0 hsla(245, 75%, 52%, 0.26);
+}
+.countan button:hover{
+    cursor: pointer;
+    background-color: hsl(244.51deg 82.61% 68.43%);
+}
+.countan .cancel{
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+.countan .cancel:hover{
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
